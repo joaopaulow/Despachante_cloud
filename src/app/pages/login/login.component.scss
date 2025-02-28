@@ -1,0 +1,94 @@
+$primary-color: #4A90E2;
+$background-color: #F4F4F4;
+$text-color: #333;
+
+body {
+    font-family: Arial, sans-serif;
+    background: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    color: $text-color;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    
+    &:hover {
+        background: darken($primary-color, 10%);
+    }
+}
+
+p {
+    margin-top: 1rem;
+    color: $text-color;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: bold;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+button:disabled {
+    background-color: gray !important;
+    cursor: not-allowed;
+  }
+  
+  .loading-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}  
